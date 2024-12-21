@@ -1,0 +1,74 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  width: 512px;
+  height: 512px;
+  border: 1px solid black;
+  background-color: white;
+}
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+button:hover {
+  background-color: #45a049;
+}
+input {
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: calc(100% - 22px);
+}
+form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background: white;
+}
+.cell {
+  border: 1px solid black;
+  background-color: white;
+  padding: 10px;
+}
+.user {
+  width: 512px;
+  height: 512px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border: 1px solid black;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+body {
+  background: #aaaaaa;
+  font-family: sans-serif;
+}
+.karel {
+  background: red;
+}
+.tooltip {
+  position: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border: 1px solid black;
+  margin: 1rem;
+  padding: 1rem;
+}

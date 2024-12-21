@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Karel</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="user">
+        <div class="chat"></div>
+        <div class="input">
+          <form onsubmit="Print_input(); return false;">
+            <input type="text" id="input" autofocus />
+            <button id="send">Send</button>
+            <button id="execute">Execute</button>
+            <button id="reset">Reset</button>
+          </form>
+        </div>
+      </div>
+      <div class="window">
+        <div class="grid"></div>
+      </div>
+    </div>
+    <div class="tooltip">
+      <p>
+        MOVE - Karel se v poli posune o tolik míst ve svém směru natočení, kolik
+        mu je za příkazem určeno (např: MOVE 4). V případě, že se parametr
+        neuvede, Karel provede jeden krok.
+      </p>
+      <p>
+        TURNLEFT - Karel se otočí vlevo. Opět můžeme zadat parametrem, kolikrát
+        se tato operace provede.
+      </p>
+      <p>
+        PLACE - Na pozici Karla se položí parametr příkazu (např. PLACE RED).
+      </p>
+      <p>RESET - nastaví Karla do levého horního místa.</p>
+      <p>
+        Příkazy je možné zadávat jak velkými, tak i malými písmeny abecedy.
+        Každý příkaz musí být na nové řádce.
+      </p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
